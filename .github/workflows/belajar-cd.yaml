@@ -19,7 +19,8 @@ jobs:
         port: 22
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.PRIVATE_KEY }}
-        script: cd ~/.apps/Belajar-CI-CD
+        script: |
+                cd ~/.apps/Belajar-CI-CD
                 git pull
                 git status
                 npm ci
