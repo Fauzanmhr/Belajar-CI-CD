@@ -11,7 +11,7 @@ describe('GET /', () => {
 
 describe('GET /name', () => {
   it('name endpoint', async () => {
-    const response = await request(app).get('/');
+    const response = await request(app).get('/name');
     expect(response.status).toBe(200);
     expect(response.body).toEqual({ msg: "Your Name is Muhammad Fauzan Muharram" });
   });
