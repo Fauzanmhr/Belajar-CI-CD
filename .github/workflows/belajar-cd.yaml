@@ -24,7 +24,7 @@ jobs:
                 git pull
                 git status
                 npm ci
-                pm2 restart
+                pm2 restart belajarcicd 
 
 
 
