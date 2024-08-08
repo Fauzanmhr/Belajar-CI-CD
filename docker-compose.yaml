@@ -1,0 +1,12 @@
+services:
+  belajarcicd:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: belajarcicd
+    container_name: belajarcicd
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production

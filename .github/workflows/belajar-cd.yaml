@@ -23,8 +23,8 @@ jobs:
                 cd ~/.apps/Belajar-CI-CD
                 git pull
                 git status
-                npm ci
-                pm2 restart belajarcicd 
+                sudo docker compose up --force-recreate --build belajarcicd -d
+
 
 
 
