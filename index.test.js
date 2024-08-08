@@ -8,3 +8,11 @@ describe('GET /', () => {
     expect(response.body).toEqual({ msg: "Hello Word" });
   });
 });
+
+describe('GET /name', () => {
+  it('name endpoint', async () => {
+    const response = await request(app).get('/');
+    expect(response.status).toBe(200);
+    expect(response.body).toEqual({ msg: "Your Name is Muhammad Fauzan Muharram" });
+  });
+});

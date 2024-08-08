@@ -7,6 +7,18 @@ app.get('/', (req, res) => {
   })
 })
 
+app.get('/name', (req, res) => {
+  res.json({
+    msg: "Your Name is Muhammad Fauzan Muharram"
+  })
+})
+
+app.get('/age', (req, res) => {
+  res.json({
+    msg: "Your age is 21"
+  })
+})
+
 const PORT = 3000
 
 app.listen(PORT, () => console.log(`App running on PORT ${PORT}`))
